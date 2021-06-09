@@ -17,6 +17,7 @@ def batch_LSQ():
     #Create a residual vector for all ranges in each epoch
     v = np.zeros((np.size(data,0), 4))
 
+    #Begin Least Squares
     for i in range(0,np.size(data,0)):
         #Set the measurement for the epoch as the 4 ranges
         l = data[i,1:]
